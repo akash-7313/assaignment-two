@@ -1,8 +1,8 @@
-/* ------------------------------------------------------font */
+/* ---------------------------font------------------------ */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-/* --------------------------------------------------common style */
+/* ------------------------common style--------------------- */
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -11,17 +11,17 @@ body{
     width: 1440px;
     margin-bottom: 70px;
 }
-/* -------------------------------------------------top section style */
+
+/* -------------------top section style start---------------------- */
 
 .colorfull{
     background-color: #2D25A0;
-    height: 570px;
 }
-
 .top-div{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 570px;
 }
 .main-title{
     color: #FFFFFF;
@@ -53,16 +53,36 @@ body{
     margin-top: 70px;
 }
 
-/* effect style start */
+/* -------------------top section style end---------------------- */
+
+/* ----------------------effect style start----------------- */
+
+.colorfull:hover .top-div{
+    background-color: brown;
+}
+.top-banner {
+    width: 450px;
+    height: 565px;
+    position: relative;
+    display: inline-block;
+    transition: transform 2s;
+}
+.top-banner .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.top-div:hover .img-top {
+    display: inline;
+    transform: rotate(360deg);
+}
+
+/* --------------------effect style end---------------------- */
 
 
-
-/* effect style end */
-
-
-
-
-/* ------------------------------------------mid section style */
+/* ---------------------mid section style start--------------------- */
 
 .player-list{
     margin: 0px 210px 27px 180px;
@@ -95,7 +115,37 @@ body{
     margin-top: -10px;
 }
 
-/* -----------------------------------------footer styles */
+/* ---------------------mid section style end--------------------- */
+
+/* ---------------------extra section style start-------------------------- */
+
+.extra-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 570px;
+    margin: 0px 210px 27px 180px;
+}
+.video-detail{
+    width: 50%;
+}
+.video-title h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.video-title p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
+.video{
+    width: 50%;
+    margin-left: 90px;
+}
+
+/* ---------------------extra section style end-------------------------- */
+
+/* ---------------------footer styles start---------------------- */
 
 .foot-div{
     display: flex;
@@ -110,7 +160,7 @@ body{
     height: 110px;
     margin-bottom: 20px;
 }
-.social-icon .fab{
+.fab{
     color: #969BAB;
     font-size: 32px;
     margin-right: 14px;
@@ -119,4 +169,90 @@ body{
 .copyright p{
     font-size: 30px;
     font-weight: 400;
+}
+
+/* ---------------------footer styles end---------------------- */
+
+/* -------------------------media query start-------------------------- */
+
+/* ------------------------mobile devices------------------------ */
+
+@media only screen and (max-width:688px) {
+
+    .container{
+        width: 100%;
+    }
+    .top-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-title{
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+   .top-banner img{
+       width: 356px;
+       height: 238px;
+       margin-top: 50px;
+       margin-left: 50px;
+   }
+   .player-list{
+       grid-template-columns: repeat(1,1fr);
+       margin-left: 30px;
+   }
+   .extra-div{
+       flex-direction: column;
+       align-items: center;
+       margin-left: 30px;
+       width: 100%;
+    }
+    .video-detail{
+       width: 100%;
+       margin-bottom: 30px;
+    }
+    .video-title h1{
+       font-size: 20px;
+       font-weight: 400;
+    }
+   .video-title p{
+       color: #6C6C6C;
+       font-size: 16px;
+       font-weight: 400;
+       margin-right: 10px;
+    }
+    .video{
+       width: 100%;
+       margin-left: 5px;
+    }
+    .video iframe{
+       width: 80%;
+       height: 200px;
+    }
+    .foot-div{
+        width: 100%;
+    }
+    .foot-div{
+       margin-top: 70px;
+       margin-bottom: 50px;
+    }
+    .logo img{
+       width: 284px;
+       height: 110px;
+       margin-bottom: 20px;
+    }
+   .copyright p{
+       font-size: 20px;
+       font-weight: 400;
+    }
+}
+
+
+/* ------------------------tablet devices------------------------ */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    
+    
 }
