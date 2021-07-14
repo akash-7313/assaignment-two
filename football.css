@@ -1,0 +1,122 @@
+/* ------------------------------------------------------font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* --------------------------------------------------common style */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1440px;
+    margin-bottom: 70px;
+}
+/* -------------------------------------------------top section style */
+
+.colorfull{
+    background-color: #2D25A0;
+    height: 570px;
+}
+
+.top-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-title{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: -40px;
+}
+.live-link{
+    background-color: #E02C6D;
+    width: 168px;
+    height: 45px;
+    padding: 12px 25px;
+    box-sizing: border-box;
+}
+.live-link a{
+    text-decoration: none;
+}
+.live-link span, i{
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.live-link i{
+    margin-left: 8px;
+}
+.top-banner img{
+    width: 556px;
+    height: 438px;
+    margin-top: 70px;
+}
+
+/* effect style start */
+
+
+
+/* effect style end */
+
+
+
+
+/* ------------------------------------------mid section style */
+
+.player-list{
+    margin: 0px 210px 27px 180px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.player-detail{
+    width: 330px;
+    height: 475px;
+    box-sizing: border-box;
+    padding: 15px 15px 33px 15px;
+    box-shadow: 1px 1px 10px #b9a3a3;
+}
+.player-pic img{
+    width: 300px;
+    height: 255px;
+    margin-bottom: -15px;
+}
+.player-info h2{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 700;
+}
+.player-info p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+/* -----------------------------------------footer styles */
+
+.foot-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+    margin-bottom: 65px;
+    box-sizing: border-box;
+}
+.logo img{
+    width: 484px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+.social-icon .fab{
+    color: #969BAB;
+    font-size: 32px;
+    margin-right: 14px;
+    margin-bottom: 20px;
+}
+.copyright p{
+    font-size: 30px;
+    font-weight: 400;
+}
