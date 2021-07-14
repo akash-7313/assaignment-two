@@ -18,23 +18,24 @@ body{
     background-color: #2D25A0;
 }
 .top-div{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     height: 570px;
 }
 .main-title{
     color: #FFFFFF;
     font-size: 40px;
     font-weight: 700;
-    margin-top: 70px;
+    margin-top: 120px;
     margin-bottom: -40px;
+    margin-left: 80px;
 }
 .live-link{
     background-color: #E02C6D;
     width: 168px;
     height: 45px;
     padding: 12px 25px;
+    margin-left: 80px;
     box-sizing: border-box;
 }
 .live-link a{
@@ -65,7 +66,6 @@ body{
     height: 565px;
     position: relative;
     display: inline-block;
-    transition: transform 2s;
 }
 .top-banner .img-top {
     display: none;
@@ -76,7 +76,6 @@ body{
 }
 .top-div:hover .img-top {
     display: inline;
-    transform: rotate(360deg);
 }
 
 /* --------------------effect style end---------------------- */
@@ -183,21 +182,25 @@ body{
         width: 100%;
     }
     .top-div{
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .copa-america{
+        width: 395px;
     }
     .main-title{
-        color: #FFFFFF;
         font-size: 20px;
-        font-weight: 700;
         margin-top: 40px;
         margin-bottom: 20px;
+        margin-left: 40px;
+    }
+    .top-banner{
+        width: 395px;
     }
    .top-banner img{
-       width: 356px;
-       height: 238px;
+       width: 80%;
+       height: 250px;
        margin-top: 50px;
-       margin-left: 50px;
+       margin-left: 15px;
    }
    .player-list{
        grid-template-columns: repeat(1,1fr);
@@ -221,7 +224,7 @@ body{
        color: #6C6C6C;
        font-size: 16px;
        font-weight: 400;
-       margin-right: 10px;
+       margin-right: 30px;
     }
     .video{
        width: 100%;
@@ -247,12 +250,18 @@ body{
        font-size: 20px;
        font-weight: 400;
     }
+
+
+    /* .extra-div, .foot-div, .player-list{
+        display: none;
+    } */
+
 }
 
 
-/* ------------------------tablet devices------------------------ */
+/* ------------------------tablet devices------------------------
 
 @media only screen and (min-width:688px) and (max-width:992px) {
     
     
-}
+} */
