@@ -43,6 +43,7 @@ body{
 }
 .live-link span, i{
     color: #FFFFFF;
+    font-size: 16px;
     font-weight: 500;
 }
 .live-link i{
@@ -84,11 +85,11 @@ body{
 /* ---------------------mid section style start--------------------- */
 
 .player-list{
-    margin: 0px 210px 27px 180px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    margin: 0px 210px 27px 180px;
 }
 .player-detail{
     width: 330px;
@@ -155,17 +156,19 @@ body{
     grid-row-gap: 20px;
 }
 .field{
-    border: 2px solid brown;
+    width: 50%;
+    margin-left: 90px;
+    box-shadow: 1px 1px 10px #b9a3a3;
     padding: 20px 40px;
 }
 .field-detail{
     width: 50%;
 }
-.field-title h1{
+.field-detail h1{
     font-size: 40px;
     font-weight: 700;
 }
-.field-title p{
+.field-detail p{
     color: #6C6C6C;
     font-size: 16px;
     font-weight: 400;
@@ -177,10 +180,6 @@ body{
     padding: 3px 25px;
     margin-left: 0px;
     box-sizing: border-box;
-}
-.field{
-    width: 50%;
-    margin-left: 90px;
 }
 .field-one img{
     width: 200px;
@@ -199,7 +198,6 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 160px;
-    margin-bottom: 65px;
     box-sizing: border-box;
 }
 .logo img{
@@ -276,16 +274,9 @@ body{
     }
     .video-title h1{
        font-size: 20px;
-       font-weight: 400;
     }
    .video-title p{
-       color: #6C6C6C;
-       font-size: 16px;
-       font-weight: 400;
        margin-right: 30px;
-    }
-    .video-detail .live-link{
-        margin-left: 5px;
     }
     .video{
        width: 90%;
@@ -300,17 +291,15 @@ body{
 
     .all-field{
        grid-template-columns: repeat(1,1fr);
-       grid-row-gap: 15px;
     }
     .field{
-       border: 1px solid brown;
        padding: 10px 35px;
        margin-left: 20px;
    }
-   .field-title h1{
+   .field-detail h1{
        font-size: 20px;
     }
-    .field-title p{
+    .field-detail p{
         margin-bottom: 30px;
     }
    .field .live-link{
@@ -325,7 +314,6 @@ body{
     .foot-div{
         width: 100%;
         margin-top: 350px;
-        margin-bottom: 50px;
     }
     .logo img{
        width: 234px;
@@ -345,7 +333,6 @@ body{
         width: 100%;
     }
     .top-div{
-        grid-template-columns: repeat(2,1fr);
         height: 350px;
     }
     .copa-america{
@@ -375,6 +362,9 @@ body{
        grid-template-columns: repeat(2,1fr);
        margin-left: 30px;
    }
+   .player-detail{
+       height: 500px;
+   }
 
    /* ------------extra first section tablet style------- */
 
@@ -391,13 +381,10 @@ body{
     }
     .video-title h1{
        font-size: 30px;
-       font-weight: 400;
     }
    .video-title p{
-       color: #6C6C6C;
-       font-size: 16px;
-       font-weight: 400;
        margin-right: 30px;
+       margin-left: 0;
     }
     .video-detail .live-link{
         margin-left: 5px;
@@ -414,12 +401,7 @@ body{
 
     /* ------------extra second section tablet style------- */
 
-    .all-field{
-       grid-template-columns: repeat(2,1fr);
-       grid-row-gap: 15px;
-    }
     .field{
-       border: 1px solid brown;
        padding: 10px 50px;
        margin-left: 20px;
    }
@@ -427,32 +409,20 @@ body{
        margin-left: 30px;
        margin-bottom: 30px;
    }
-   .field-title h1{
+   .field-detail h1{
        font-size: 30px;
     }
    .field .live-link{
        padding: 1px 25px;
     }
-   .field-one img{
-       width: 200px;
-   }
 
    /* ------------footer tablet style---------- */
 
     .foot-div{
         width: 100%;
-    }
-    .foot-div{
-       margin-top: 150px;
-       margin-bottom: 50px;
+        margin-bottom: 50px;
     }
     .logo img{
        width: 384px;
-       height: 110px;
-       margin-bottom: 20px;
-    }
-   .copyright p{
-       font-size: 30px;
-       font-weight: 400;
     }
 }
