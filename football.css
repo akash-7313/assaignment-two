@@ -8,7 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    width: 1440px;
+    width: 1500px;
     margin-bottom: 70px;
 }
 
@@ -193,11 +193,14 @@ body{
         margin-bottom: 20px;
         margin-left: 40px;
     }
+    .live-link{
+        margin-left: 40px;
+    }
     .top-banner{
         width: 395px;
     }
    .top-banner img{
-       width: 80%;
+       width: 90%;
        height: 250px;
        margin-top: 50px;
        margin-left: 15px;
@@ -252,11 +255,7 @@ body{
     }
 
 
-    /* .extra-div, .foot-div, .player-list{
-        display: none;
-    } */
-
-}
+} 
 
 
 /* ------------------------tablet devices------------------------
